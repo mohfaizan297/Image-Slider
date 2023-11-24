@@ -1,0 +1,46 @@
+.slider{
+    width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+}
+.images{
+    width: 70%;
+    margin: 2rem auto;
+    position: relative;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+    transition: opacity 0.5s;
+}
+.leftArrow{
+    position: absolute;
+    left: 10%;
+    font-size: 2rem;
+    color: white;
+}
+.rightArrow{
+    position: absolute;
+    right: 10%;
+    color: white;
+    font-size: 2rem;
+}
+
+.arrow{
+    cursor: pointer;
+}
+
+@keyframes imageFade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
